@@ -162,7 +162,7 @@ export default function Vendas() {
             <Modal show={show} onHide={handleClose}>
                 <Form>
                     <Modal.Header>
-                        <Modal.Title>CADASTRAR PRODUTOS</Modal.Title>
+                        <Modal.Title>FINALIZAR VENDA</Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body>
