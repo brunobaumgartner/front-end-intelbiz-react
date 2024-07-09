@@ -1,4 +1,4 @@
-#FormContainer{
+#form_container_vendas{
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -8,5 +8,4 @@
 #div_botoes{
     display: flex;
     justify-content: flex-end;
-    gap: 27px;
 }
