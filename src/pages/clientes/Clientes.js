@@ -90,7 +90,7 @@ export default function Clientes() {
         window.location.reload(true);
     }
 
-    const table_header = ['#', 'nome', 'endereço', 'telefone', ''];
+    const table_header = ['#', 'NOME', 'ENDEREÇO', 'TELEFONE', ''];
 
     return (
         <>

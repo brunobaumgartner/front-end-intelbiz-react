@@ -24,6 +24,10 @@
     .flex-column {
         flex-direction: row !important;
     }
+
+    .botao_nav{
+        background-color: blue !important;
+    }
 }
 
 
@@ -40,5 +44,10 @@
     
     #nav img{
         height: 45px;
+    }
+
+    .botao_nav{
+        background-color: #cdf2ff;
+        border: none;
     }
  }

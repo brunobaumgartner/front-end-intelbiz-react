@@ -173,7 +173,7 @@ export default function Vendas() {
                             <DefaultInput type="number" id='modal_valor_pago' label='PAGO' onChange={(e) => setValorPago(e.target.value)} step="0.01" />
                         </Form.Group>
                         <Form.Group className="mb-3">
-                            <DefaultInput type="number" id='modal_troco' label='TROCO' value={valorTroco} onChange={(e) => setValorProduto(e.target.value)} step="0.01" />
+                            <DefaultInput type="number" id='modal_troco' label='TROCO' value={valorTroco} onChange={(e) => setValorProduto(e.target.value)} step="0.01" desabilitar={true} />
                         </Form.Group>
                     </Modal.Body>
 

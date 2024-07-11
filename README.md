@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Front-end IntelBiz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sistema de ponto de venda desenvolvido para uma empresa ficticia chamada IntelBiz.
 
-## Available Scripts
+O sistema foi pensado e desenvolvido para ajudar a empresa a registrar suas vendas, estoque e também dar uma visão para o empreendedor de quem são os clientes que estão comprando os produtos.
 
-In the project directory, you can run:
+## Como iniciar o servidor
 
-### `npm start`
+Depois de clonar o repositório do github, navegue até a pasta utilizando o CMD (Prompt de comando ou terminal da sua preferência) ou você pode abrir a pasta do projeto no `Visual Studio Code` e apertar `CTRL + Aspas`. Esse comando abrirá um console que já estará na pasta do projeto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Com a pasta do projeto aberta no console, digite `npm install` e aperte ENTER para iniciar a instalação de todos os recursos que são pre-requisitos para que o projeto funcione corretamente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Assim que terminar a instalação, no mesmo console, digite `npm start` para iniciar o servidor.
 
-### `npm test`
+## Acessando o sistema
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para acessar o software depois de ter instalado e iniciado o servidor basta ir no navegador e acessar `http://localhost:3000`
 
-### `npm run build`
+## OBS.:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O sistema consome dados da API IntelBiz e só funcionará corretamente se o servidor do back-end que serve essa APi estiver rodando. Todos os requisitos e instruções de como preparar e inciar o servidor estarão nos links enviados e também deixarei os links no final dessa documentação.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links importantes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Front-end: https://github.com/brunobaumgartner/front-end-intelbiz-react.git
+Banck-end: https://github.com/brunobaumgartner/back-end-intelbiz.git
+Prototipo: https://www.figma.com/design/xVIYDGn9vWgSDhkfNH4ItK/Untitled?node-id=0-1&t=GWqC8sTJM5Mk0zuf-1

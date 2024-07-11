@@ -11,17 +11,17 @@ export default function Navbar() {
             <ul class="nav flex-column ">
                 <li class="nav-item">
                     <Link to='/' class="nav-link" >
-                        <img src={vendas} alt='Vendas' title='Vendas' class="btn btn-light"/>
+                        <img src={vendas} alt='Vendas' title='Vendas' class="btn btn-light botao_nav"/>
                     </Link>
                 </li>
                 <li class="nav-item">
                     <Link to='/produtos' class="nav-link" >
-                        <img src={produtos} alt='Produtos' title='Produtos' class="btn btn-light"/>
+                        <img src={produtos} alt='Produtos' title='Produtos' class="btn btn-light botao_nav"/>
                     </Link>
                 </li>
                 <li class="nav-item">
                     <Link to='/clientes' class="nav-link" >
-                    <img src={clientes} alt='Clientes' title='Clientes' class="btn btn-light"/>
+                    <img src={clientes} alt='Clientes' title='Clientes' class="btn btn-light botao_nav"/>
                     </Link>
                 </li>
             </ul>

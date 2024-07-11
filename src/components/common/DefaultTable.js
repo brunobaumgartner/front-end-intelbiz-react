@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../assets/styles/DefaultTable.css'
 
 export default function DefaultTable(props) {
     return (

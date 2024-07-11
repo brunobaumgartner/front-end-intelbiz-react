@@ -1,0 +1,8 @@
+table {
+    max-width: 80%;
+    margin: auto;
+}
+
+thead tr th{
+    background-color: #dbf3fb !important;
+}
