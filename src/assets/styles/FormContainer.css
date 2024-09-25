@@ -1,0 +1,9 @@
+#FormContainer {
+    /* background-color: var(--bs-gray-100); */
+    /* box-shadow: 0px 10px 7px -10px #8f8f8f; */
+    height: 320px;
+}
+
+#FormContainer .mb-3 {
+    margin: 0 !important;
+}

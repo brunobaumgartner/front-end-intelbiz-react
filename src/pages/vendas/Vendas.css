@@ -1,0 +1,11 @@
+#form_container_vendas{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#div_botoes{
+    display: flex;
+    justify-content: flex-end;
+}

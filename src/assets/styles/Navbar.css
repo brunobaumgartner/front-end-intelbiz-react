@@ -1,0 +1,63 @@
+
+
+@media (max-width: 767.98px) { 
+    #nav {
+        padding: 0;
+        margin: 0;
+        background-color: #cdf2ff;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+    }
+
+    .nav {
+        justify-content: space-evenly
+    }
+    
+    #nav img{
+        height: 45px;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+    }
+
+    .flex-column {
+        flex-direction: row !important;
+    }
+
+    .botao_nav{
+        background-color: blue !important;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    #root, #container-full, #container{
+        height: 100%;
+    }
+    
+    #nav {
+        padding: 0;
+        margin: 0;
+        background-color: #cdf2ff;
+    }
+    
+    #nav img{
+        height: 45px;
+    }
+
+    .botao_nav{
+        background-color: #cdf2ff;
+        border: none;
+    }
+ }
+
+ #nav nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px 0 30px 0;
+ }

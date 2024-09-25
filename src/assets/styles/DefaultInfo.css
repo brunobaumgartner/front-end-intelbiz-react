@@ -1,0 +1,8 @@
+#DefaultInfo{
+    display: flex;
+    justify-content: flex-end;
+}
+#InfoCol{
+    display: flex;
+    flex-direction: column;
+}
