@@ -20,8 +20,10 @@ export default function Vendas() {
     const [inputDataClientes, setInputDataClientes] = useState([]);
     const [inputDataProdutos, setInputDataProdutos] = useState([]);
     const [tableData, setTableData] = useState([]);
+
     const [cliente, setCliente] = useState('');
     const [produto, setProduto] = useState('');
+    const [idProduto, setIdProduto] = useState('');
     const [quantProduto, setQuantProduto] = useState('');
     const [valorProduto, setValorProduto] = useState('');
     const [valorPago, setValorPago] = useState('');
@@ -33,10 +35,9 @@ export default function Vendas() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    
     const busca_clientes = useCallback(() => {
         buscar.busca_clientes()
-        .then(clientes => {
+            .then(clientes => {
                 const listClientes = clientes.map(item => ({
                     id: item.id,
                     value: item.nome
@@ -55,6 +56,7 @@ export default function Vendas() {
                     id: item.id,
                     value: item.Produto
                 }));
+                console.log(produtos)
                 setInputDataProdutos(listProdutos);
             })
             .catch(error => {
@@ -121,7 +123,7 @@ export default function Vendas() {
                 id: contador,
                 id_venda: dado,
                 nome_produto: buscaProduto[0].data[0],
-                id_produto: produto,
+                id_produto: idProduto,
                 nome_cliente: inputDataClientes[cliente - 1].value,
                 id_cliente: cliente,
                 quantidade: quantProduto,
@@ -132,7 +134,7 @@ export default function Vendas() {
         }).then(() => {
             get_carrinho();
         });
-    }, [buscaProduto, produto, cliente, quantProduto, valorProduto, valorProdutoTot, inputDataClientes, get_carrinho]);
+    }, [buscaProduto, idProduto, cliente, quantProduto, valorProduto, valorProdutoTot, inputDataClientes, get_carrinho]);
 
     const calcula_troco = useCallback(() => {
         setValorTroco((valorPago - valorCarrinhoTot).toFixed(2));
@@ -187,7 +189,9 @@ export default function Vendas() {
             <Header page='Vendas' />
             <FormContainer id='form_container_vendas'>
                 <DefaultSelect opcoes={inputDataClientes} id='select_clientes' label='CLIENTE' onChange={(e) => setCliente(e.target.value)} />
-                <DefaultSelect opcoes={inputDataProdutos} id='select_produtos' label='PRODUTO' onChange={(e) => setProduto(e.target.value)} />
+                <DefaultSelect opcoes={inputDataProdutos} id='select_produtos' label='PRODUTO' onChange={(e) => {
+                                                                                                            setProduto(e.target.options[e.target.selectedIndex].text); 
+                                                                                                            setIdProduto(e.target.value) }}  />
                 <DefaultInput id='input_quant' label='QUANTIDADE' onChange={(e) => setQuantProduto(e.target.value)} />
                 <DefaultInput id='input_valor' label='VALOR' value={valorProduto} onChange={(e) => setValorProduto(e.target.value)} desabilitar={true} />
                 <DefaultInput id='input_total' label='TOTAL' value={valorProdutoTot} onChange={(e) => setValorProdutoTot(e.target.value)} desabilitar={true} />
