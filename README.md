@@ -12,7 +12,7 @@ O sistema foi pensado e desenvolvido para ajudar a empresa a registrar suas vend
 
     3 - Assim que terminar a instalação, no mesmo console, digite `npm start` para iniciar o servidor.
 
-## Como iniciar o servidor (Sem o docker)
+## Como iniciar o servidor (Com o docker)
 
     1 - Certifique-se de ter o Docker instalado e em execução em sua máquina.
 
